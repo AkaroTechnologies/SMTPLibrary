@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EA31744157DEB200097BD2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA31743157DEB200097BD2A /* UIKit.framework */; };
+		7EA31746157DEB200097BD2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA31745157DEB200097BD2A /* Foundation.framework */; };
+		7EA31748157DEB200097BD2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA31747157DEB200097BD2A /* CoreGraphics.framework */; };
+		7EA3174E157DEB200097BD2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EA3174C157DEB200097BD2A /* InfoPlist.strings */; };
+		7EA31750157DEB200097BD2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA3174F157DEB200097BD2A /* main.m */; };
+		7EA31754157DEB210097BD2A /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA31753157DEB210097BD2A /* JDAppDelegate.m */; };
+		7EA31771157DEC570097BD2A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA31770157DEC570097BD2A /* CFNetwork.framework */; };
+		7EA6708B1590A5CB0099A3A2 /* libSMTPSender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA670831590A5CB0099A3A2 /* libSMTPSender.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7EA3173F157DEB200097BD2A /* SendMailTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMailTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA31743157DEB200097BD2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7EA31745157DEB200097BD2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7EA31747157DEB200097BD2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7EA3174B157DEB200097BD2A /* SendMailTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SendMailTest-Info.plist"; sourceTree = "<group>"; };
+		7EA3174D157DEB200097BD2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EA3174F157DEB200097BD2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EA31751157DEB200097BD2A /* SendMailTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SendMailTest-Prefix.pch"; sourceTree = "<group>"; };
+		7EA31752157DEB200097BD2A /* JDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAppDelegate.h; sourceTree = "<group>"; };
+		7EA31753157DEB210097BD2A /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
+		7EA31770157DEC570097BD2A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7EA670831590A5CB0099A3A2 /* libSMTPSender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSMTPSender.a; sourceTree = "<group>"; };
+		7EA670851590A5CB0099A3A2 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		7EA670861590A5CB0099A3A2 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
+		7EA670871590A5CB0099A3A2 /* NSData+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Additions.h"; sourceTree = "<group>"; };
+		7EA670881590A5CB0099A3A2 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		7EA670891590A5CB0099A3A2 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
+		7EA6708A1590A5CB0099A3A2 /* SMTPSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTPSender.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EA3173C157DEB200097BD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA31771157DEC570097BD2A /* CFNetwork.framework in Frameworks */,
+				7EA31744157DEB200097BD2A /* UIKit.framework in Frameworks */,
+				7EA31746157DEB200097BD2A /* Foundation.framework in Frameworks */,
+				7EA31748157DEB200097BD2A /* CoreGraphics.framework in Frameworks */,
+				7EA6708B1590A5CB0099A3A2 /* libSMTPSender.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EA31734157DEB200097BD2A = {
+			isa = PBXGroup;
+			children = (
+				7EA31749157DEB200097BD2A /* SendMailTest */,
+				7EA31742157DEB200097BD2A /* Frameworks */,
+				7EA31740157DEB200097BD2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EA31740157DEB200097BD2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3173F157DEB200097BD2A /* SendMailTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EA31742157DEB200097BD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA31770157DEC570097BD2A /* CFNetwork.framework */,
+				7EA31743157DEB200097BD2A /* UIKit.framework */,
+				7EA31745157DEB200097BD2A /* Foundation.framework */,
+				7EA31747157DEB200097BD2A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EA31749157DEB200097BD2A /* SendMailTest */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3175A157DEB8D0097BD2A /* SMTP */,
+				7EA31752157DEB200097BD2A /* JDAppDelegate.h */,
+				7EA31753157DEB210097BD2A /* JDAppDelegate.m */,
+				7EA3174A157DEB200097BD2A /* Supporting Files */,
+			);
+			path = SendMailTest;
+			sourceTree = "<group>";
+		};
+		7EA3174A157DEB200097BD2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EA3174B157DEB200097BD2A /* SendMailTest-Info.plist */,
+				7EA3174C157DEB200097BD2A /* InfoPlist.strings */,
+				7EA3174F157DEB200097BD2A /* main.m */,
+				7EA31751157DEB200097BD2A /* SendMailTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EA3175A157DEB8D0097BD2A /* SMTP */ = {
+			isa = PBXGroup;
+			children = (
+				7EA670831590A5CB0099A3A2 /* libSMTPSender.a */,
+				7EA670841590A5CB0099A3A2 /* headers */,
+			);
+			name = SMTP;
+			sourceTree = "<group>";
+		};
+		7EA670841590A5CB0099A3A2 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				7EA670851590A5CB0099A3A2 /* Base64Transcoder.h */,
+				7EA670861590A5CB0099A3A2 /* HSK_CFUtilities.h */,
+				7EA670871590A5CB0099A3A2 /* NSData+Base64Additions.h */,
+				7EA670881590A5CB0099A3A2 /* NSStream+SKPSMTPExtensions.h */,
+				7EA670891590A5CB0099A3A2 /* SKPSMTPMessage.h */,
+				7EA6708A1590A5CB0099A3A2 /* SMTPSender.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EA3173E157DEB200097BD2A /* SendMailTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA31757157DEB210097BD2A /* Build configuration list for PBXNativeTarget "SendMailTest" */;
+			buildPhases = (
+				7EA3173B157DEB200097BD2A /* Sources */,
+				7EA3173C157DEB200097BD2A /* Frameworks */,
+				7EA3173D157DEB200097BD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendMailTest;
+			productName = SendMailTest;
+			productReference = 7EA3173F157DEB200097BD2A /* SendMailTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EA31736157DEB200097BD2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 7EA31739157DEB200097BD2A /* Build configuration list for PBXProject "SendMailTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7EA31734157DEB200097BD2A;
+			productRefGroup = 7EA31740157DEB200097BD2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EA3173E157DEB200097BD2A /* SendMailTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EA3173D157DEB200097BD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA3174E157DEB200097BD2A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EA3173B157DEB200097BD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA31750157DEB200097BD2A /* main.m in Sources */,
+				7EA31754157DEB210097BD2A /* JDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EA3174C157DEB200097BD2A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA3174D157DEB200097BD2A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EA31755157DEB210097BD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Manipal Dhariwal";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Manipal Dhariwal";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PROVISIONING_PROFILE = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7EA31756157DEB210097BD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Manipal Dhariwal";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Manipal Dhariwal";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PROVISIONING_PROFILE = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EA31758157DEB210097BD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Manipal Dhariwal";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Manipal Dhariwal";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendMailTest/SendMailTest-Prefix.pch";
+				INFOPLIST_FILE = "SendMailTest/SendMailTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SendMailTest\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7EA31759157DEB210097BD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Manipal Dhariwal";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Manipal Dhariwal";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendMailTest/SendMailTest-Prefix.pch";
+				INFOPLIST_FILE = "SendMailTest/SendMailTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SendMailTest\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5E8F16DC-F6EE-4451-8B80-27A8F2406B91";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EA31739157DEB200097BD2A /* Build configuration list for PBXProject "SendMailTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA31755157DEB210097BD2A /* Debug */,
+				7EA31756157DEB210097BD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA31757157DEB210097BD2A /* Build configuration list for PBXNativeTarget "SendMailTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA31758157DEB210097BD2A /* Debug */,
+				7EA31759157DEB210097BD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EA31736157DEB200097BD2A /* Project object */;
+}
